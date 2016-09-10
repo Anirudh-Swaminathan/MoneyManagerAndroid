@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anirudh.anirudhswami.personalassistant" >
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:backupAgent=".AniBackUpAgent"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAINyik27HQgK4npGQz89-8g7QnzVlwvUiA7Fu1MA" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="com.anirudh.anirudhswami.personalassistant.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UserMain" />
+        <activity
+            android:name=".WeatherUpdates"
+            android:label="Weather Updates"
+            android:parentActivityName=".MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anirudh.anirudhswami.personalassistant.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Contacts"
+            android:label="Contacts"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anirudh.anirudhswami.personalassistant.MainActivity" />
+        </activity>
+        <activity
+            android:name=".UpdateContact"
+            android:parentActivityName=".Contacts" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anirudh.anirudhswami.personalassistant.Contacts" />
+        </activity>
+        <activity
+            android:name=".AddContact"
+            android:label="Add Contact"
+            android:parentActivityName=".Contacts" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anirudh.anirudhswami.personalassistant.Contacts" />
+        </activity>
+        <activity
+            android:name=".Contact_Content"
+            android:parentActivityName=".Contacts" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anirudh.anirudhswami.personalassistant.Contacts" />
+        </activity>
+        <activity
+            android:name=".AddMovie"
+            android:parentActivityName=".Movies" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anirudh.anirudhswami.personalassistant.Movies" />
+        </activity>
+        <activity
+            android:name=".SingleMovie"
+            android:parentActivityName=".Movies" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anirudh.anirudhswami.personalassistant.Movies" />
+        </activity>
+        <activity
+            android:name=".Movies"
+            android:label="@string/title_activity_movies"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anirudh.anirudhswami.personalassistant.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BudgetMain"
+            android:label="@string/title_activity_budget_main"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anirudh.anirudhswami.personalassistant.MainActivity" />
+        </activity>
+        <activity
+            android:name=".UpdateBudget"
+            android:parentActivityName=".BudgetMain" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anirudh.anirudhswami.personalassistant.BudgetMain" />
+        </activity>
+        <activity
+            android:name=".UpdateCost"
+            android:parentActivityName=".BudgetMain" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anirudh.anirudhswami.personalassistant.BudgetMain" />
+        </activity>
+
+        <receiver
+            android:name=".BudgetReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".MonthlyGraph"
+            android:parentActivityName=".BudgetMain" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anirudh.anirudhswami.personalassistant.BudgetMain" />
+        </activity>
+        <activity
+            android:name=".DailyGraph"
+            android:parentActivityName=".BudgetMain" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.anirudh.anirudhswami.personalassistant.BudgetMain" />
+        </activity>
+        <activity android:name=".CostHistory" >
+        </activity>
+    </application>
+
+</manifest>

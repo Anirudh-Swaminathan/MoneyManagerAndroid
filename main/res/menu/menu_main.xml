@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <!--
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+        -->
+    <!--
+    <item android:id="@+id/UpdateUser"
+        android:title="Update Profile"
+        app:showAsAction = "always"
+        android:icon="@drawable/ic_settings_white_24dp"/>
+     -->
+    <item android:id="@+id/Weather"
+        android:title="Weather Updates"
+        app:showAsAction = "collapseActionView"/>
+    <!--
+    <item android:id="@+id/Calculator"
+        android:title="Calculator"
+        app:showAsAction = "collapseActionView"/>
+    -->
+    <item android:id="@+id/Contacts"
+        android:title="Contacts"
+        app:showAsAction = "collapseActionView"/>
+    <item android:id="@+id/Budget"
+        android:title="Budget"
+        app:showAsAction = "never"/>
+    <item android:id="@+id/Movies"
+        android:title="Movies"
+        app:showAsAction = "collapseActionView"/>
+    <!--
+    <item android:id="@+id/Marks"
+        android:title="Marks manager"
+        app:showAsAction = "withText"/>
+    -->
+    <item android:id="@+id/Logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_exit_to_app_white_24dp"
+        app:showAsAction = "always"/>
+</menu>

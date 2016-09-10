@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="UpdateUser" type="id" />
+    <item name="Weather" type="id" />
+    <item name="Calculator" type="id" />
+    <item name="Contacts" type="id" />
+    <item name="Budget" type="id" />
+    <item name="Movies" type="id" />
+    <item name="Marks" type="id" />
+    <item name="Logout" type="id" />
+    <item name="AddIt" type="id" />
+    <item name="AddMovMenu" type="id" />
+    <item name="ViewAll" type="id" />
+    <item name="Search" type="id" />
+    <item name="Sort" type="id" />
+    <item name="budup" type="id" />
+    <item name="budun" type="id" />
+    <item name="costup" type="id" />
+    <item name="costhis" type="id" />
+</resources>

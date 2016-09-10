@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.anirudh.anirudhswami.personalassistant.Movies">
+    <item
+        android:id="@+id/Search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="Search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/AddMovMenu"
+        android:icon="@drawable/ic_add_circle_outline_white_24dp"
+        android:title="Add Movie"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/Sort"
+        android:icon="@drawable/ic_sort_rating"
+        android:title="Sort Entries"
+        app:showAsAction="always" />
+</menu>
